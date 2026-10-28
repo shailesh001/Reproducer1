@@ -5,7 +5,7 @@ struct ContentView: View {
     var body: some View {
         RealityView { content in
             let cube = ModelEntity(
-                mesh: .generateBox(size: 0.2),
+                mesh: .generateBox(size: 0.5),
                 materials: [SimpleMaterial(color: .blue, isMetallic: false)]
             )
             cube.components.set(SpinComponent())
